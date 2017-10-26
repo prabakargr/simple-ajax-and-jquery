@@ -32,12 +32,12 @@ $(document).ready(function(){
 	$("#date").change(function(){
      datechan=$("#date").val();
 	});
-	$("button").click(function(){
+	$("button").click(function(){      
 		 route={
               from:fromchan,
               to:tochan,
               date:datechan,
-		}
+		} 
 		$.post("https://59f05eecce72350012bebfa9.mockapi.io/route",route,function(){
 			$("#fromcity").val("");
 			$("#tocity").val("");
@@ -62,10 +62,10 @@ $(document).ready(function(){
                  		$("#tbody").html(aa);  
 
                     }
-				});
+				})
 			}else{
 				$("#tbody").html("");
-
+				break;
 			}
 		}
 		
