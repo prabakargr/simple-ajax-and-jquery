@@ -6,7 +6,7 @@ var route="";
 $(document).ready(function(){
 	$.ajax({
 		type:"GET",
-		url:"http://59f0485ace72350012bebf99.mockapi.io/buslist",
+		url:"https://59f0485ace72350012bebf99.mockapi.io/buslist",
 		dataType:"json",
 		success:function(result){
 			var fromcity="<option  value=''>"+"select city"+"</option>";
@@ -38,7 +38,7 @@ $(document).ready(function(){
               to:tochan,
               date:datechan,
 		}
-		$.post("http://59f05eecce72350012bebfa9.mockapi.io/route",route,function(){
+		$.post("https://59f05eecce72350012bebfa9.mockapi.io/route",route,function(){
 			$("#fromcity").val("");
 			$("#tocity").val("");
 			$("#date").val("");
@@ -50,7 +50,7 @@ $(document).ready(function(){
 				&& props[i].date==route.date) {
 				$.ajax({
                     type:"GET",
-                    url:"http://59f18593a118a000126fbe0d.mockapi.io/buses",
+                    url:"https://59f18593a118a000126fbe0d.mockapi.io/buses",
                     dataType:"json",
                     success:function(result){
                     	var aa='';
