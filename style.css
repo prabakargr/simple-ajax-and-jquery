@@ -1,0 +1,16 @@
+header{
+	background-color: #dc3545;
+}
+.web_name{
+	font-size: 20px;
+	font-weight: 500;
+}
+@media(max-width:576px){
+	.heading_bus{
+		text-align: center;
+	}
+}
+footer{
+	margin-top: 18%;
+	background-color: #dc3545;
+}
